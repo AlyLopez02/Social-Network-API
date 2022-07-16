@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const reactionSchema = require('./Reaction');
 
 
 const thoughtSchema = new Schema(
@@ -12,19 +13,14 @@ const thoughtSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: createdAt //maybe call getDate function
+            get: createdAt //maybe call getDate function or don't have this at all & delete date function
             //Use a getter method to format the timestamp on query
         },
         username: { // unsure if more is needed here
             type: String,
             required: true
         },
-        reactions: [
-            {
-                type: Schema.Types.ObjectId,  //unsure if this is right
-                ref: 'Reaction',
-            }
-        ],
+        reactions: [reactionSchema],
     },
     {
         toJSON: {
