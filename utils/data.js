@@ -99,7 +99,7 @@ const getRandomThought = () =>
 const getRandomEmail = () =>
     `${getRandomArrayItem(email)}`;
     
-const getRandomFriends = () => {
+const getRandomFriends = (int) => {
     const friends = [];
     for (let i = 0; i < int; i++) {
       friends.push({
@@ -109,7 +109,7 @@ const getRandomFriends = () => {
     return results;
 };
 
-const getRandomReactions = () => {
+const getRandomReactions = (int) => {
     const reactions = [];
     for (let i = 0; i < int; i++) {
       reactions.push({
