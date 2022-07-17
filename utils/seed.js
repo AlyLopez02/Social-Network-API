@@ -1,3 +1,4 @@
+//rename 'seed.js' before running npm run seed
 const connection = require('../config/connection');
 const { User, Thought } = require('../models');
 const { getRandomUsername, getRandomThought, getRandomFriends, getRandomReactions, getPossibleUsername, getPossibleEmail } = require('./data');

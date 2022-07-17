@@ -6,20 +6,7 @@ const username1 = [
   'batmanhater0',
   'dinofinder1',
   'horselover44',
-  'mickeymouse08',
-  // 'greenlantern67',
-  // 'wonderwoman88',
-  // 'minniemouse80',
-  // 'wordmaster99',
-  // 'amazingauthor2',
-  // 'cameracadet66',
-  // 'gothamknight44',
-  // 'lewislane03',
-  // 'supergirl7',
-  // 'greenarrow46',
-  // 'flashzoomzoom',
-  // 'hawkgirl',
-  // 'lavagirl1997'
+  'mickeymouse08'
 ];
 
 const username2 = [
@@ -30,20 +17,7 @@ const username2 = [
   'batmanhater0',
   'dinofinder1',
   'horselover44',
-  'mickeymouse08',
-  // 'greenlantern67',
-  // 'wonderwoman88',
-  // 'minniemouse80',
-  // 'wordmaster99',
-  // 'amazingauthor2',
-  // 'cameracadet66',
-  // 'gothamknight44',
-  // 'lewislane03',
-  // 'supergirl7',
-  // 'greenarrow46',
-  // 'flashzoomzoom',
-  // 'hawkgirl',
-  // 'lavagirl1997'
+  'mickeymouse08'
 ];
 
 const email = [
@@ -54,20 +28,7 @@ const email = [
   'b_barnes@email.com',
   'c-clementine@email.org',
   'd-derrick@email.com',
-  'e.evans@email.com',
-  // 'f_fonds@email.org',
-  // 'g-garrick@email.org',
-  // 'h-harrolds@email.com',
-  // 'i.iverson@email.org',
-  // 'j-joshua@email.com',
-  // 'k-karmen@email.com',
-  // 'l_linus@email.com',
-  // 'm-matthews@email.com',
-  // 'n.nichols@email.org',
-  // 'o.otterson@email.org',
-  // 'p.potter@email.org',
-  // 'q.quincy@email.org',
-  // 'r.robinson@email.org'
+  'e.evans@email.com'
 ];
 
 const thoughtText = [
@@ -122,11 +83,8 @@ const getRandomArrItemThenDelete = (arr) => {
   let result = arr[itemNumber];
   arr.splice(itemNumber, 1);
   return `${result}`;
-
-
 };
 // -------------------------------
-
 
 
 //Exported------------------------
@@ -158,7 +116,6 @@ const getRandomReactions = (int) => {
   return reactions;
 };
 
-
 //for properties that do require unique
 const getPossibleUsername = () =>
   `${getRandomArrItemThenDelete(username1)}`;
@@ -167,6 +124,5 @@ const getPossibleEmail = () =>
   `${getRandomArrItemThenDelete(email)}`;
 
 // -------------------------------
-
 
 module.exports = { getRandomUsername, getRandomThought, getRandomFriends, getRandomReactions, getPossibleUsername, getPossibleEmail };
