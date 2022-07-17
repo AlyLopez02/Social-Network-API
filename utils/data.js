@@ -5,8 +5,6 @@ const username1 = [
   'hulkfan77',
   'batmanhater0',
   'dinofinder1',
-  'horselover44',
-  'mickeymouse08'
 ];
 
 const username2 = [
@@ -16,8 +14,6 @@ const username2 = [
   'hulkfan77',
   'batmanhater0',
   'dinofinder1',
-  'horselover44',
-  'mickeymouse08'
 ];
 
 const email = [
@@ -27,8 +23,6 @@ const email = [
   'a.adams@email.com',
   'b_barnes@email.com',
   'c-clementine@email.org',
-  'd-derrick@email.com',
-  'e.evans@email.com'
 ];
 
 const thoughtText = [
@@ -98,9 +92,7 @@ const getRandomThought = () =>
 const getRandomFriends = (int) => {
   const friends = [];
   for (let i = 0; i < int; i++) {
-    friends.push({
-      username: getRandomUsername(),
-    });
+    friends.push(getRandomUsername());
   }
   return friends;
 };
@@ -125,4 +117,4 @@ const getPossibleEmail = () =>
 
 // -------------------------------
 
-module.exports = { getRandomUsername, getRandomThought, getRandomFriends, getRandomReactions, getPossibleUsername, getPossibleEmail };
+module.exports = { getRandomArrayItem, getRandomUsername, getRandomThought, getRandomFriends, getRandomReactions, getPossibleUsername, getPossibleEmail };

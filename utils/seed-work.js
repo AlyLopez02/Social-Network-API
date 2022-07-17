@@ -18,7 +18,7 @@ connection.once('open', async () => {
     const thoughts = [];
 
     // Loop 20 times -- add thoughts to the thoughts array
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 20; i++) {
         // Get some random assignment objects using a helper function that we imported from ./data
         const reactions = getRandomReactions(5);
 
@@ -40,10 +40,9 @@ connection.once('open', async () => {
     const users = [];
 
     // Loop 8 times
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 8; i++) {
         // Get some random assignment objects using a helper function that we imported from ./data
-        const friends = [];
-        let thoughts = []
+        const friends = getRandomFriends(3);
 
         const username = getPossibleUsername();
         const email = getPossibleEmail();
@@ -51,7 +50,7 @@ connection.once('open', async () => {
         users.push({
             username,
             email,
-            thoughts, //Need to make it so that only associated thoughts go through
+            thoughts: [...thoughts], //Need to make it so that only associated thoughts go through
             friends
         });
     }
