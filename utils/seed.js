@@ -49,7 +49,7 @@ connection.once('open', async () => {
         users.push({
             username,
             email,
-            thoughts: [...thoughts],
+            thoughts: [...thoughts], //Need to make it so that only associated thoughts go through
             friends
         });
     }
@@ -60,6 +60,7 @@ connection.once('open', async () => {
 
     // Log out the seed data to indicate what should appear in the database
     console.table(thoughts);
+    console.table(users);
     console.info('Seeding finished!');
     process.exit(0);
 });

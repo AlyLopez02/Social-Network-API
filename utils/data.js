@@ -119,9 +119,11 @@ const getRandomArrayItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 const getRandomArrItemThenDelete = (arr) => {
   itemNumber = [Math.floor(Math.random() * arr.length)]
 
-  arr[itemNumber];
-
+  let result = arr[itemNumber];
   arr.splice(itemNumber, 1);
+  return `${result}`;
+
+
 };
 // -------------------------------
 
