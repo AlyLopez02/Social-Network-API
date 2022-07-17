@@ -1,6 +1,6 @@
 const connection = require('../config/connection');
 const { User, Thought } = require('../models');
-const { getRandomUsername, getRandomThought, getRandomEmail, getRandomFriends, getRandomReactions } = require('./data');
+const { getRandomUsername, getRandomThought, getRandomFriends, getRandomReactions, getPossibleUsername, getPossibleEmail } = require('./data');
 
 connection.on('error', (err) => err);
 
@@ -43,8 +43,8 @@ connection.once('open', async () => {
         // Get some random assignment objects using a helper function that we imported from ./data
         const friends = getRandomFriends(3);
 
-        const username = getRandomUsername();
-        const email = getRandomEmail();
+        const username = getPossibleUsername();
+        const email = getPossibleEmail();
 
         users.push({
             username,
