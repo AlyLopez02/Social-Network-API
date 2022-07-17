@@ -42,6 +42,6 @@ userSchema
         return (this.friends.length);
     });
 
-const Course = model('user', userSchema);
+const User = model('user', userSchema);
 
 module.exports = User;

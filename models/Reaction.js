@@ -18,8 +18,6 @@ const reactionSchema = new Schema(
     createdAt: {
         type: Date,
         default: Date.now,
-        get: createdAt //maybe call getDate function or don't have this at all & delete date function
-        //Use a getter method to format the timestamp on query
     },
   },
   {
@@ -29,10 +27,6 @@ const reactionSchema = new Schema(
       id: false,
   }
 );
-
-function getDate(createdAt){
-    return createdAt;
-}
 
 
 module.exports = reactionSchema;

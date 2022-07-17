@@ -13,8 +13,6 @@ const thoughtSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: createdAt //maybe call getDate function or don't have this at all & delete date function
-            //Use a getter method to format the timestamp on query
         },
         username: { // unsure if more is needed here
             type: String,
@@ -30,16 +28,12 @@ const thoughtSchema = new Schema(
     }
 );
 
-function getDate(createdAt){
-    return createdAt;
-}
-
 thoughtSchema
     .virtual('reactionCount')
     .get(function(){
         return (this.reactions.length);
     });
 
-const Course = model('thought', thoughtSchema);
+const Thought = model('thought', thoughtSchema);
 
 module.exports = Thought;
