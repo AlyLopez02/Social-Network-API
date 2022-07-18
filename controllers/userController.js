@@ -4,14 +4,12 @@ module.exports = {
     // Get all users
     getUsers(req, res) {
         User.find()
-            .populate({ path: 'thoughts', select: '-__v' })
             .then((users) => res.json(users))
             .catch((err) => res.status(500).json(err));
     },
     // Get a single user
     getSingleUser(req, res) {
         User.findOne({ _id: req.params.userId })
-            .populate({ path: 'thoughts', select: '-__v' })
             // .select('-__v') // unsure if needed
             .then((user) =>
                 !user
