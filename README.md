@@ -20,9 +20,13 @@ Finally, you can add and delete friends if you go to `localhost:3001/api/users/:
 
 As you can tell, there is a lot of actions you can do, so have fun experimenting! 
 
-## Walkthrough Video
-Here is the link to the walkthrough video of application:
+## Walkthrough Video (2 Parts)
+Here are the links to the two part walkthrough of the application:
 
-<a href="https://watch.screencastify.com/v/nks5xN0lfl7IrqzkwQSg">https://watch.screencastify.com/v/nks5xN0lfl7IrqzkwQSg</a>
+Part 1 Video:
+<a href="https://watch.screencastify.com/v/aF8u1gFhTSy3YTybpOWC">https://watch.screencastify.com/v/aF8u1gFhTSy3YTybpOWC</a>
+
+Part 2 Video:
+<a href="https://watch.screencastify.com/v/HbWpNkLPH7gR6dXDbh9Q">https://watch.screencastify.com/v/HbWpNkLPH7gR6dXDbh9Q</a>
 
 Any information used in the video was placeholder information.
